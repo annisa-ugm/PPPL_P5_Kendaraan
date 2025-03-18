@@ -25,20 +25,22 @@ public class Kendaraan {
     public int getJumlahRoda() {
         return jumlahRoda;
     }
-
     public String getJenis() {
         return jenis;
     }
-
     public String getBahanBakar() {
         return bahanBakar;
     }
 
     public boolean isBermotor() {
-        return !jenis.equalsIgnoreCase("sepeda") && !bahanBakar.equals("-");
+        return !jenis.equalsIgnoreCase("sepeda") &&
+                !bahanBakar.equals("-");
     }
 
     public boolean isTransportasiUmum() {
-        return jenis.equalsIgnoreCase("bus") || jenis.equalsIgnoreCase("angkot") || jenis.equalsIgnoreCase("kereta");
+        return jenis.equalsIgnoreCase("bus") ||
+                jenis.equalsIgnoreCase("angkot") ||
+                jenis.equalsIgnoreCase("kereta");
     }
 }
+
